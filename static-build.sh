@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/sh -e
 
 # $@ is intentionally not wrapped in quotes.
 go install -installsuffix static -ldflags "-s -w -extldflags '-static' $GO_LDFLAGS" $@
